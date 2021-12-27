@@ -1,0 +1,68 @@
+package Collections
+
+// Creating object
+object ListRealted {
+
+//  Lists are immutable whereas arrays are mutable in Scala.
+  // Lists represents a linked list whereas arrays are flat.
+
+//  ---------------------------
+//In a Scala list, each element must be of the same type.
+//The implementation of lists uses mutable state internally during construction.
+//In Scala, list is defined under scala.collection.immutable package.
+//A List has various methods to add, prepend, max, min, etc. to enhance the usage of list.
+
+  // Main method
+  def main (args:Array[String]): Unit = {
+    // Creating and initializing immutable lists
+    var name: List[String] = List("sayam", "Sai", "Seshu", "suman")
+    var value = List(1, 2, 3, 4, 5, 6)
+
+//    Display the value of list name and value
+    println("Names:")
+    println(name)
+
+    // Display the value of mylist2 using for loop
+    println("\nValue:")
+    for(mylist<-name){
+      println(mylist)
+    }
+
+//    / Scala program to illustrate the
+    //// use of empty list
+
+    val emptyList : List[Nothing]=List()
+    println("The Empty list Is:")
+    println(emptyList)
+
+    // use of two dimensional list
+    // Creating a two-dimensional List.
+    val twodlist: List[List[Int]]=List(List(1,0,1),List(0,1,0),List(0,0,1))
+
+    println("The two dimensional list is:")
+
+    println(twodlist)
+    for(twolist<-twodlist) {
+       println(twolist)
+     }
+
+    val mylist=List("C", "C#", "Java", "Scala",
+      "PHP", "Ruby")
+
+//    // perform head operation
+//    list.head //returns head of the list
+    println("The head of the list is:")
+    println(mylist.head)
+
+    
+    println("The tail of the list is:")
+    println(mylist.tail)
+
+
+
+
+
+
+
+  }
+}
